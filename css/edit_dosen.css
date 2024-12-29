@@ -1,0 +1,82 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the form */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+}
+
+
+/* Style the form container */
+form {
+    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table-like structure for the form */
+.form-table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-table label {
+    display: inline-block;
+    width: 120px;  /* Set a fixed width for the label column */
+    text-align: right;
+    margin-right: 15px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-table input[type="text"],
+.form-table input[type="email"],
+.form-table textarea {
+    width: calc(100% - 135px);  /* Subtract label width and spacing */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-table textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-table button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-table button:hover {
+    background-color: #45a049;
+}
+
+/* Style for the hidden input (dosen_id) */
+input[type="hidden"] {
+    display: none;
+}
+
+/* Small spacing between table rows */
+.form-table .form-row {
+    margin-bottom: 15px;
+}
